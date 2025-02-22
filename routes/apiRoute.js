@@ -5,7 +5,7 @@ let statusToResponse = false
 
 const apiRouter = Router()
 
-apiRouter.get("/api-led/{status}", (req,res)=>{
+apiRouter.get("/api-led/:status", (req,res)=>{
     const {status} = req.params()
     if(typeof status === "boolean"){
         statusToResponse = status
