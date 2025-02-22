@@ -1,5 +1,8 @@
 import { Router } from "express";
 
+let statusToResponse = false
+
+
 // Define la función que manejará la ruta "api-led"
 export const apiLed = (req, res) => {
   // Aquí puedes manejar la solicitud y respuesta
